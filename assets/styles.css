@@ -1,0 +1,387 @@
+/* RESET DE CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+/* Estilos header */
+header {
+    background-color: #CAC5B9;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#logo{
+    width: 5%;
+}
+
+h1{
+    font-family: "DM Serif Display", serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.navbar{
+    width: 100% !important;
+}
+.collapse{
+    background-color: #00000056  !important ;
+}
+.navbar ul{
+    padding: 10px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: end;    
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 20px;
+    font-family: "DM Serif Display", serif;
+}
+
+.navbar ul li a{
+    color: #fffefd;
+    font-family: "DM Serif Display", serif;
+    display: block;
+}
+
+.navbar ul li a:visited {
+    color: #fffefd; /* Mantiene el mismo color después de visitar */
+}
+
+.navbar ul li a:hover {
+    color: #CAC5B9; /* Opcional: cambia el color cuando pasás el mouse */
+}
+
+.navbar ul li a:active {
+    color: fffefd;; /* Mantiene el color cuando se hace clic */
+}
+/* Fin estilos header */
+
+/* Estilos footer */
+
+footer{
+    text-align: center;
+}
+
+footer p{
+    font-family: "DM Serif Display", serif;
+    color: #221303;
+    text-align: center;
+}
+
+/* Fin estilos footer */
+
+/* Estilos main - index */
+
+.container-index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(225, 225, 225, 0.716);
+}
+
+.textos-main{
+    text-align: center;
+}
+
+.textos-main p{
+    font-family: "Sigmar", serif;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.img-yoIndex{
+    width: 400px;
+    height: 600px;
+    justify-content: center;
+    filter: drop-shadow(10px 10px 20px black);
+}
+
+.my-name{
+    font-family: "Sigmar", sans-serif;
+    font-size: 1.5rem;
+    color: #000;
+    text-align: center;
+}
+
+.my-name span{
+    display: block;
+    color:#CAC5B9;
+    font-size:3rem;
+}
+
+.container-icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5%;
+}
+
+.container-icon{
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.fa{
+    font-size: 6rem;
+    color:  #CAC5B9;
+}
+
+.container-icons{
+    background-color: #85837A;
+    background-repeat: none;
+    background-size: cover;
+    align-items: center;
+}
+
+.text-icon{
+    font-family: "Sigmar", serif;
+    font-size:rem;
+    color: #fff;
+    padding-top: 50px;
+}
+/* query mobile main-index  */
+@media (max-width: 990px) {
+    .img-yoIndex{
+        width: 400px;
+        height: 500px;
+    }    
+    .container-index{
+        flex-direction: column;
+    }
+    .textos-main{
+        text-align: center;
+    }
+    .container-icons{
+        display:block
+    }
+}
+
+/* Fin estilos main - index */
+
+/* Estilos sobre mi */
+.main-sobreMi{
+    background-color: #221303;
+}
+.sobreMi{
+    background-image: url(../assets/imgs/sobreMi.webp);
+}
+
+.contenido-sobreMi{
+    text-align: center;
+}
+
+.yo-dni{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: #fff solid 5px;
+}
+
+.text-pag{
+    font-family: "Sigmar", serif;
+    font-size: 3.5rem;
+    color: #fff;
+    padding: 10px;
+}
+
+.parrafo-sobreMi{
+    font-family: "Sigmar", serif;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Fin estilos sobre mi */
+
+/* Estilos Articulos */
+.main-articulos{
+    background-image: url(../assets/imgs/articulos.webp);
+    text-align: center;
+}
+
+.contenido-articulos{
+    text-align: center;
+    background-color: #86837B;
+}  
+
+#libro{
+    width: 300px;
+    height: 300px;
+}
+
+.parrafo-articulos{
+    font-family: "Sigmar", serif;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+}
+
+.contenido-articulos ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.contenido-articulos ul li a{
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #fffefd;
+    font-family: "Sigmar", serif;
+}
+
+/* hover indica la accion a realizar cuando el mouse pasa por encima del elemento con la clase */
+.contenido-articulos ul li a:hover {
+    color: #CAC5B9;
+    font-size: 50px;
+}
+
+.contenido-articulos ul li a:active {
+    color: fffefd;
+}
+/*Fin estilos Articulos */
+
+/* Estilos proyectos */
+.main-proyectos{
+    background-image: url(../assets/imgs/proyectos.webp);
+    text-align: center;
+}
+
+.main-proyectos h1{
+    font-family: "Sigmar", serif;
+    font-size: 3rem;
+    color: #86837B;
+    padding: 10px;
+}
+/* configuro display grid para que sean 3 columnas */
+.container-proyectos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-proyectos a{
+    font-family: "Sigmar", serif;
+    font-size: 1.2rem;
+    color: #86837B;
+}
+
+.main-proyectos a:hover{
+    color: #d5cdbc;
+}
+
+.proyecto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.img-project{
+    max-width: 100%;
+	width: 500px;
+	height: 300px;
+}
+
+.logo-github{
+    padding: 100px 0px 100px 0px;
+}
+
+/* query mobile index-proyextos  */
+@media (max-width: 990px) {
+    /* lo paso a display block, para que cada elemento ocupe una linea */
+    .container-proyectos{
+        display:block
+    }
+    .img-project{
+        max-width: 100%;
+        width: 300px;
+        height: 200px;
+    }
+    .main-proyectos h1{
+        font-size: 2rem;
+    }
+    .main-proyectos a{
+        font-size: 1.5rem;
+    }
+    .proyecto{
+        margin-top: 50px;
+    }
+}
+/* Fin estilos proyectos */
+
+/* Estilos contacto */  
+.main-contacto{
+    background-image: url(../assets/imgs/contacto.webp);
+    text-align: center;
+    margin: 50px;
+}
+
+.contacto{
+    border: 4px solid #000;
+    border-radius: 10px;
+}
+
+.form-contacto{
+    align-items: center;
+    background-color: #CAC5B9;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.form-contacto label{
+    font-family: "DM Serif Display", serif;
+    font-size: 20px;
+    color: #000;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.botonEnviar{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: "DM Serif Display", serif;
+    font-size: 20px;
+}
+
+/* Fin estilos contacto */
+
+/* Estilos generales */
+h2{
+    font-family: "Sigmar", serif;
+    font-size: 2rem;
+    color: #fff;
+    padding: 10px;
+    font-weight: bolder;
+}
+.iconos{
+    width: 100px;
+    height: 100px;
+}
+.iconos:hover{
+    width: 130px;
+    height: 130px;
+}
