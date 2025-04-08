@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
 
 /* Estilos header */
 header {
@@ -16,11 +16,11 @@ header {
     width: 100%;
 }
 
-#logo{
+#logo {
     width: 5%;
 }
 
-h1{
+h1 {
     font-family: "DM Serif Display", serif;
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -32,52 +32,60 @@ a {
 }
 
 
-.navbar{
+.navbar {
     width: 100% !important;
 }
-.collapse{
-    background-color: #00000056  !important ;
+
+.collapse {
+    background-color: #00000056 !important;
 }
-.navbar ul{
+
+.navbar ul {
     padding: 10px;
     display: flex;
     padding: 0;
     margin: 0;
-    justify-content: end;    
+    justify-content: end;
 }
 
-.navbar ul li{
+.navbar ul li {
     list-style: none;
     margin: 20px;
     font-family: "DM Serif Display", serif;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     color: #fffefd;
     font-family: "DM Serif Display", serif;
     display: block;
 }
 
 .navbar ul li a:visited {
-    color: #fffefd; /* Mantiene el mismo color después de visitar */
+    color: #fffefd;
+    /* Mantiene el mismo color después de visitar */
 }
 
 .navbar ul li a:hover {
-    color: #CAC5B9; /* Opcional: cambia el color cuando pasás el mouse */
+    color: #CAC5B9;
+    /* Opcional: cambia el color cuando pasás el mouse */
 }
 
 .navbar ul li a:active {
-    color: fffefd;; /* Mantiene el color cuando se hace clic */
+    color: fffefd;
+    ;
+    /* Mantiene el color cuando se hace clic */
 }
+
 /* Fin estilos header */
 
 /* Estilos footer */
 
-footer{
+footer {
     text-align: center;
+    border-top: solid 1px black;
 }
 
-footer p{
+footer p {
     font-family: "DM Serif Display", serif;
     color: #221303;
     text-align: center;
@@ -87,105 +95,111 @@ footer p{
 
 /* Estilos main - index */
 
-.container-index{
+.container-index {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(225, 225, 225, 0.716);
 }
 
-.textos-main{
+.textos-main {
     text-align: center;
 }
 
-.textos-main p{
+.textos-main p {
     font-family: "Sigmar", serif;
     font-size: 1.5rem;
     padding: 10px;
 }
 
-.img-yoIndex{
+.img-yoIndex {
     width: 400px;
     height: 600px;
     justify-content: center;
     filter: drop-shadow(10px 10px 20px black);
 }
 
-.my-name{
+.my-name {
     font-family: "Sigmar", sans-serif;
     font-size: 1.5rem;
     color: #000;
     text-align: center;
 }
 
-.my-name span{
+.my-name span {
     display: block;
-    color:#CAC5B9;
-    font-size:3rem;
+    color: #CAC5B9;
+    font-size: 3rem;
 }
 
-.container-icons{
+.container-icons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 5%;
 }
 
-.container-icon{
+.container-icon {
     justify-content: center;
     text-align: center;
     padding: 20px;
 }
 
-.fa{
+.fa {
     font-size: 6rem;
-    color:  #CAC5B9;
+    color: #CAC5B9;
 }
 
-.container-icons{
+.container-icons {
     background-color: #85837A;
     background-repeat: none;
     background-size: cover;
     align-items: center;
 }
 
-.text-icon{
+.text-icon {
     font-family: "Sigmar", serif;
-    font-size:rem;
+    font-size: rem;
     color: #fff;
     padding-top: 50px;
 }
+
 /* query mobile main-index  */
 @media (max-width: 990px) {
-    .img-yoIndex{
+    .img-yoIndex {
         width: 400px;
         height: 500px;
-    }    
-    .container-index{
+    }
+
+    .container-index {
         flex-direction: column;
     }
-    .textos-main{
+
+    .textos-main {
         text-align: center;
     }
-    .container-icons{
-        display:block
+
+    .container-icons {
+        display: block
     }
 }
 
 /* Fin estilos main - index */
 
 /* Estilos sobre mi */
-.main-sobreMi{
+.main-sobreMi {
     background-color: #221303;
 }
-.sobreMi{
+
+.sobreMi {
     background-image: url(../assets/imgs/sobreMi.webp);
     padding: 200px;
 }
-.sobreMi::before{
+
+.sobreMi::before {
     animation: zoomInOut 4s ease-in-out infinite;
 }
 
-.contenido-sobreMi{
+.contenido-sobreMi {
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
     grid-template-rows: repeat(3, 0.5fr);
@@ -193,7 +207,7 @@ footer p{
     margin-left: 100px;
 }
 
-.img-nombre{
+.img-nombre {
     display: flex;
     flex-direction: column;
     margin-top: 10%;
@@ -201,12 +215,12 @@ footer p{
     align-items: center;
 }
 
-.img-nombre h2{
+.img-nombre h2 {
     background-color: #DECCAD;
     border-radius: 10PX;
 }
 
-.lenguajes-utilizados{
+.lenguajes-utilizados {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,11 +230,11 @@ footer p{
     margin-top: 100px;
 }
 
-.lenguajes-utilizados p{
+.lenguajes-utilizados p {
     color: #DECCAD;
 }
 
-.residencia{
+.residencia {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,7 +243,7 @@ footer p{
     grid-column: 1/2;
 }
 
-.residencia p{
+.residencia p {
     color: #DECCAD;
 }
 
@@ -244,40 +258,51 @@ footer p{
     text-decoration: none;
     transition: transform 0.2s, box-shadow 0.2s;
     height: fit-content;
-  }
-  
-  .social-btn:hover {
+}
+
+.social-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-  }
-  
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 
-  .github { background-color: #333; }
-  .linkedin { background-color: #0e76a8; }
-  .whatsapp { background-color: #25D366; }
-  .instagram { 
+
+.github {
+    background-color: #333;
+}
+
+.linkedin {
+    background-color: #0e76a8;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  }
+}
 
-.yo-dni{
+.yo-dni {
     width: 300px;
     height: 300px;
     padding: 10px;
 }
-.redes-sociales{
+
+.redes-sociales {
     display: flex;
     flex-direction: row;
     grid-column: 1/3;
     margin-top: 100px;
 }
-.text-pag{
+
+.text-pag {
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 1rem;
 }
 
-.parrafo-sobreMi{
+.parrafo-sobreMi {
     display: inline-block;
     border-radius: 10px;
     font-family: "Sigmar", serif;
@@ -288,15 +313,16 @@ footer p{
     margin-top: 7%;
     background-color: #DECCAD;
 }
+
 /* query mobile/tablet sobre mi */
 
 /* query mobile main-index  */
 @media (max-width: 990px) {
-    .sobreMi{
+    .sobreMi {
         padding: 50px;
     }
 
-    .contenido-sobreMi{
+    .contenido-sobreMi {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -304,174 +330,233 @@ footer p{
         margin-left: 0px;
     }
 
-    .img-nombre{
+    .img-nombre {
         margin-top: 0px;
         grid-row: 1;
         align-items: center;
     }
-    .img-nombre h2{
+
+    .img-nombre h2 {
         background-color: #DECCAD;
         border-radius: 10PX;
         font-size: 1.5rem;
         text-align: center;
     }
 
-    .parrafo-sobreMi{
+    .parrafo-sobreMi {
         align-content: center;
     }
 
-    .lenguajes-utilizados{
+    .lenguajes-utilizados {
         margin-bottom: 100px;
     }
-    .redes-sociales{
+
+    .redes-sociales {
         display: flex;
         flex-direction: column;
         grid-column: 1/3;
         margin-top: 100px;
-        width: 90%;
+        width: 0%;
     }
 
-    .redes-sociales a{
+    .redes-sociales a {
         text-align: center;
     }
 }
+
 /* Fin estilos sobre mi */
 
 /* Estilos Articulos */
-.main-articulos{
+
+.articulos {
     background-image: url(../assets/imgs/articulos.webp);
+    padding: 200px;
     text-align: center;
 }
 
-.contenido-articulos{
+.articulos h1{
+    color: black;
+    text-shadow:
+      -1px -1px 0 white,
+       1px -1px 0 white,
+      -1px  1px 0 white,
+       1px  1px 0 white;
+}
+
+.contenido-articulos {
+    background: linear-gradient(to bottom right, #f5f5f5, #d3cbb8);
+    border-radius: 15px;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 900px;
     text-align: center;
-    background-color: #86837B;
-}  
-
-#libro{
-    width: 300px;
-    height: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.parrafo-articulos{
-    font-family: "Sigmar", serif;
+#libro {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.contenido-articulos h2 {
     font-size: 1.5rem;
-    color: #fff;
-    padding: 10px;
+    margin-bottom: 20px;
 }
 
-.contenido-articulos ul li{
+.contenido-articulos p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contenido-articulos ul {
     list-style: none;
-    font-size: 1.5rem;
-    padding: 10px;
+    padding: 0;
 }
 
-.contenido-articulos ul li a{
-    list-style: none;
-    font-size: 1.5rem;
-    padding: 10px;
-    color: #fffefd;
-    font-family: "Sigmar", serif;
+.contenido-articulos li {
+    margin: 10px 0;
 }
 
-/* hover indica la accion a realizar cuando el mouse pasa por encima del elemento con la clase */
-.contenido-articulos ul li a:hover {
-    color: #CAC5B9;
-    font-size: 50px;
+.contenido-articulos a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-.contenido-articulos ul li a:active {
-    color: fffefd;
+.contenido-articulos a:hover {
+    color: #007bff;
 }
+
+.contenido-articulos a:visited {
+    color: #4a4a4a;
+    /* Mantiene el mismo color después de visitar */
+}
+.contenido-articulos a:active {
+    color: #4a4a4a;
+    /* Mantiene el color cuando se hace clic */
+}
+.contenido-articulos a:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+@media (max-width: 990px) {
+    .articulos{
+        padding: 50px;
+    }
+    .contenido-articulos {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 90%;
+    }
+    .contenido-articulos a {
+        font-size: 0.9rem;
+    }
+    .contenido-articulos a:hover {
+        font-size: 1rem;
+    }
+
+}
+
 /*Fin estilos Articulos */
 
 /* Estilos proyectos */
-.main-proyectos{
+.main-proyectos {
     background-image: url(../assets/imgs/proyectos.webp);
     text-align: center;
 }
 
-.main-proyectos h1{
+.main-proyectos h1 {
     font-family: "Sigmar", serif;
     font-size: 3rem;
     color: #86837B;
     padding: 10px;
 }
+
 /* configuro display grid para que sean 3 columnas */
-.container-proyectos{
+.container-proyectos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.main-proyectos a{
+.main-proyectos a {
     font-family: "Sigmar", serif;
     font-size: 1.2rem;
     color: #86837B;
 }
 
-.main-proyectos a:hover{
+.main-proyectos a:hover {
     color: #d5cdbc;
 }
 
-.proyecto{
+.proyecto {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 50px;
 }
-.img-project{
+
+.img-project {
     max-width: 100%;
-	width: 500px;
-	height: 300px;
+    width: 500px;
+    height: 300px;
 }
 
-.logo-github{
+.logo-github {
     padding: 100px 0px 100px 0px;
 }
 
 /* query mobile index-proyextos  */
 @media (max-width: 990px) {
+
     /* lo paso a display block, para que cada elemento ocupe una linea */
-    .container-proyectos{
-        display:block
+    .container-proyectos {
+        display: block
     }
-    .img-project{
+
+    .img-project {
         max-width: 100%;
         width: 300px;
         height: 200px;
     }
-    .main-proyectos h1{
+
+    .main-proyectos h1 {
         font-size: 2rem;
     }
-    .main-proyectos a{
+
+    .main-proyectos a {
         font-size: 1.5rem;
     }
-    .proyecto{
+
+    .proyecto {
         margin-top: 50px;
     }
 }
+
 /* Fin estilos proyectos */
 
-/* Estilos contacto */  
-.main-contacto{
+/* Estilos contacto */
+.main-contacto {
     background-image: url(../assets/imgs/fondo2.png);
     text-align: center;
     margin: 50px;
 }
 
-.contacto{
+.contacto {
     border: 4px solid #000;
     border-radius: 10px;
 }
 
-.contacto h1{
+.contacto h1 {
     font-size: 3rem;
     color: whitesmoke;
     padding: 10px;
 }
 
-.form-contacto{
+.form-contacto {
     align-items: center;
     background-color: #CAC5B9;
     display: flex;
@@ -479,9 +564,10 @@ footer p{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    
+
 }
-.form-contacto label{
+
+.form-contacto label {
     padding-top: 20px;
     font-family: "DM Serif Display", serif;
     font-size: 20px;
@@ -490,20 +576,21 @@ footer p{
     flex-direction: column;
 }
 
-.form-contacto label textarea{
+.form-contacto label textarea {
     width: 100%;
     height: 200px;
     border-radius: 5px;
     border: 1px solid #000;
 }
-input{
+
+input {
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
     border: 1px solid #000;
 }
 
-.botonEnviar{
+.botonEnviar {
     background-color: #000;
     color: #fff;
     margin-bottom: 20px;
@@ -516,18 +603,20 @@ input{
 /* Fin estilos contacto */
 
 /* Estilos generales */
-h2{
+h2 {
     font-family: "Sigmar", serif;
     font-size: 2rem;
     color: #fff;
     padding: 10px;
     font-weight: bolder;
 }
-.iconos{
+
+.iconos {
     width: 100px;
     height: 100px;
 }
-.iconos:hover{
+
+.iconos:hover {
     width: 130px;
     height: 130px;
 }
