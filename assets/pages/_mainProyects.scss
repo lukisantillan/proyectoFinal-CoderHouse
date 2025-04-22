@@ -1,0 +1,40 @@
+@import "../utils/mixin";
+
+.main-proyectos{
+    background-image: url("../assets/imgs/proyectos.webp");
+    text-align: center;
+    h1{
+        font-size: 3rem;
+        color: #86837B;
+        padding: 10px;
+    }
+    .container-proyectos{
+        @include grid(3,1,1fr,1fr);
+        a{
+            font-family: "Sigmar", serif;
+            font-size: 1.2rem;
+            color: #86837B;
+        }
+        a:hover{
+            color: #d5cdbc;
+        }
+        .proyecto{
+            @include display(flex,center,center);
+            flex-direction: column;
+            padding-top: 50px;
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0 0 20px rgba(0,0,0,0.7);
+            }
+            img{
+                max-width: 100%;
+                width: 500px;
+                height: 300px;
+            }
+        }
+    }
+    .logo-github{
+        padding: 100px 0px 100px 0px;
+    }
+        
+}

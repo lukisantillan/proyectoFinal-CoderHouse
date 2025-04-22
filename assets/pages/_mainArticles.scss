@@ -1,0 +1,64 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.articulos {
+    background-image: url(../assets/imgs/articulos.webp);
+    padding: 200px;
+    text-align: center;
+
+    h1 {
+        color: black;
+        text-shadow: -1px -1px $white,
+            1px -1px 0 $white,
+            -1px 1px 0 $white,
+            1px 1px 0  $white;
+        ;
+    }
+}
+
+.contenido-articulos{
+    background: linear-gradient(to bottom right, #f5f5f5, #d3cbb8);
+    border-radius: 15px;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    #libro {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            margin: 10px 0px;
+            a{
+                text-decoration: none;
+                color: #4a4a4a;
+                font-weight: 500;
+                transition: color 0.3s;
+            }
+            a:hover{
+                color: #007bff;
+            }
+            a:visited, a:active{
+                color: #4a4a4a;
+            }
+            a:focus{
+                outline: none;
+                box-shadow: 0 0 0 5px rgba(0,123,255,0.5);
+            }
+        }
+    }
+}
+

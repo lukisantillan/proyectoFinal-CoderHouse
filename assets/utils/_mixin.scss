@@ -1,0 +1,15 @@
+@mixin grid($columns,$rows,$medidaColumn, $medidaRow){
+    display: grid;
+    grid-template-columns: repeat($columns,$medidaColumn);
+    grid-template-rows: repeat($rows,$medidaRow);
+    
+}
+
+@mixin display($type,$content,$aling){
+    display: $type;
+    @if $type == flex{
+        justify-content: $content;
+        align-items: $aling;
+    }
+}
+
