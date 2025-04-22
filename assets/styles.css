@@ -16,7 +16,7 @@ header img {
   width: 5%;
 }
 header .collapse {
-  background-color: rgba(0, 0, 0, 0.337254902) !important;
+  background-image: linear-gradient(to right, #CAC5B9, #000000);
 }
 header nav {
   width: 100% !important;
@@ -33,16 +33,16 @@ header nav ul li {
   margin: 20px;
   font-family: "DM Serif Display", serif;
 }
-header nav ul li a {
-  color: #fffefd;
+header nav ul li .nav-link {
+  color: #FFFFFF;
 }
-header nav ul li a:visited {
-  color: #fffefd;
+header nav ul li .nav-link:visited {
+  color: #FFFFFF;
 }
-header nav ul li a:hover {
+header nav ul li .nav-link:hover {
   color: #85847A;
 }
-header nav ul li a:active {
+header nav ul li .nav-link:active {
   color: #85847A;
 }
 
@@ -250,7 +250,7 @@ footer p {
 }
 
 .main-contacto {
-  background-image: url(../assets/imgs/fondo2.png);
+  background-image: linear-gradient(to right, #CAC5B9, #000000);
   text-align: center;
   margin: 50px;
 }

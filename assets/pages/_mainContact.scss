@@ -2,7 +2,7 @@
 @import "../utils/mixin";
 
 .main-contacto{
-    background-image: url(../assets/imgs/fondo2.png);
+    background-image: linear-gradient(to right, $primaryColor, $black);
     text-align: center;
     margin: 50px;
     div{
