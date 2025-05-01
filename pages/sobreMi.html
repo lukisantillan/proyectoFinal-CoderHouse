@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Blog personal de Lucas Sebastián Santillán, un estudiante de programación y desarrollador web.">
+    <meta name="keywords" content="Blog, Lucas Santillán, Programación, Desarrollo Web, Estudiante">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../assets/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +21,7 @@
 <body>
     <!-- bannner principal -->
     <header>
-        <img src="../assets/imgs/logoMio.png" alt="logo pagina" id="logo">
+        <a href="../index.html"> <img src="../assets/imgs/logoMio.png" alt="logo pagina" id="logo"> </a>
         <nav class="navbar navbar-expand-lg w-100">
             <div class="container-fluid ">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -54,7 +57,7 @@
         <div class="sobreMi">
             <h1 class="text-uppercase text-pag">Un poco sobre mi..</h1>
         </div>
-        <div class="contenido-sobreMi">
+        <section class="contenido-sobreMi">
             <div class="img-nombre">
                 <img src="../assets/imgs/yo-dni.jpg" alt="" class="yo-dni">
                 <h2>Mi nombre .. Lucas Sebastián Santillán</h2>
@@ -84,41 +87,41 @@
                 Este blog es mi espacio para compartir conocimientos, experiencias y todo lo relacionado con el
                 desarrollo y la tecnología. ¡Gracias por pasarte y ser parte de este camino! 🚀
             </p>
-            
-            
-            <div class="redes-sociales justify-content-center gap-4 mb-4">
-                <a href="https://github.com/lukisantillan" class="social-btn github" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a> 
+        </section>
+            <section class="skills">
+                <div class="lenguajes-utilizados">
+                    <p class="">Mis lenguajes más utilizados son los siguientes</p>
+                    <iframe
+                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=lukisantillan&layout=compact&theme=tokyonight"
+                        width="100%" height="200px" style="border:none;"></iframe>
+                </div>
 
-                <a href="https://www.linkedin.com/in/lucas-santill%C3%A1n-a50166263/" class="social-btn linkedin" target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
+                <div class="redes-sociales justify-content-center gap-4 mb-4">
+                    <a href="https://github.com/lukisantillan" class="social-btn github" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
 
-                <a href="https://wa.me/5492323587472" class="social-btn whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
+                    <a href="https://www.linkedin.com/in/lucas-santill%C3%A1n-a50166263/" class="social-btn linkedin"
+                        target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
 
-                <a href="https://www.instagram.com/lucassaantillan" class="social-btn instagram" target="_blank">
-                    <i class="fab fa-instagram"></i> Instagram
-                </a>
-                </a>
-            </div>
+                    <a href="https://wa.me/5492323587472" class="social-btn whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
 
-            <div class="lenguajes-utilizados">
-                <p class="">Mis lenguajes más utilizados son los siguientes</p>
-                <iframe
-                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=lukisantillan&layout=compact&theme=tokyonight"
-                    width="100%" height="200px" style="border:none;"></iframe>
-            </div>
-
-        </div>
+                    <a href="https://www.instagram.com/lucassaantillan" class="social-btn instagram" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    </a>
+                </div>
+            </section>
     </main>
 
     <!-- pie de pagina -->
     <footer class="text-white text-center py-3">
         <p class="mb-0">© 2025 Lucas Santillán. Todos los derechos reservados.</p>
-      </footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
