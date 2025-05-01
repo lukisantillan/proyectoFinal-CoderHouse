@@ -9,11 +9,15 @@ header {
   text-align: center;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
-header img {
-  width: 5%;
+header a {
+  text-decoration: none;
+  text-align: start;
+}
+header a img {
+  width: 12%;
 }
 header .collapse {
   background-image: linear-gradient(to right, #CAC5B9, #000000);
@@ -111,13 +115,11 @@ footer p {
   color: #FFFFFF;
 }
 
-.main-sobreMi {
-  background-color: #221303;
-}
 .main-sobreMi .sobreMi {
   background-image: url("../assets/imgs/sobreMi.webp");
   background-size: cover;
   padding: 200px;
+  width: 100%;
 }
 .main-sobreMi .sobreMi h1 {
   font-size: 3.5rem;
@@ -128,9 +130,8 @@ footer p {
 .main-sobreMi .contenido-sobreMi {
   display: grid;
   grid-template-columns: repeat(2, 0.5fr);
-  grid-template-rows: repeat(3, 0.5fr);
-  column-gap: 100px;
-  margin-left: 100px;
+  grid-template-rows: repeat(1, 0.5fr);
+  background-image: linear-gradient(to bottom, rgba(34, 19, 3, 0.95), rgb(222, 204, 173));
 }
 .main-sobreMi .contenido-sobreMi .img-nombre {
   display: flex;
@@ -146,10 +147,13 @@ footer p {
 .main-sobreMi .contenido-sobreMi .img-nombre img {
   width: 300px;
   height: 300px;
-  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0px 20px rgb(255, 255, 255);
 }
 .main-sobreMi .contenido-sobreMi p {
   display: inline-block;
+  box-shadow: 0 0px 20px rgb(255, 255, 255);
   border-radius: 10px;
   font-family: "Sigmar", serif;
   font-size: 1rem;
@@ -159,13 +163,18 @@ footer p {
   margin-top: 7%;
   background-color: #DECCAD;
 }
-.main-sobreMi .contenido-sobreMi .redes-sociales {
+.main-sobreMi section {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to top, rgba(34, 19, 3, 0.95), rgb(222, 204, 173));
+}
+.main-sobreMi section .redes-sociales {
   display: flex;
   flex-direction: row;
   grid-column: 1/3;
   margin-top: 100px;
 }
-.main-sobreMi .contenido-sobreMi .redes-sociales .social-btn {
+.main-sobreMi section .redes-sociales .social-btn {
   align-items: center;
   padding: 10px 16px;
   border: none;
@@ -177,34 +186,33 @@ footer p {
   transition: transform 0.2s, box-shadow 0.2s;
   height: fit-content;
 }
-.main-sobreMi .contenido-sobreMi .redes-sociales .social-btn:hover {
+.main-sobreMi section .redes-sociales .social-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-.main-sobreMi .contenido-sobreMi .redes-sociales .github {
+.main-sobreMi section .redes-sociales .github {
   background-color: #333;
 }
-.main-sobreMi .contenido-sobreMi .redes-sociales .linkedin {
+.main-sobreMi section .redes-sociales .linkedin {
   background-color: #0e76a8;
 }
-.main-sobreMi .contenido-sobreMi .redes-sociales .whatsapp {
+.main-sobreMi section .redes-sociales .whatsapp {
   background-color: #25D366;
 }
-.main-sobreMi .contenido-sobreMi .redes-sociales .instagram {
+.main-sobreMi section .redes-sociales .instagram {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
-.main-sobreMi .contenido-sobreMi .lenguajes-utilizados {
+.main-sobreMi section .lenguajes-utilizados {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  grid-column: 1/3;
   margin-top: 100px;
-  grid-row: 2;
 }
-.main-sobreMi .contenido-sobreMi .lenguajes-utilizados p {
-  color: #deccad;
-  background-color: #221303;
+.main-sobreMi section .lenguajes-utilizados p {
+  color: #221303;
+  text-shadow: -1px -1px #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
+  font-size: 20px;
 }
 
 .main-proyectos {
@@ -254,9 +262,6 @@ footer p {
   text-align: center;
   margin: 50px;
 }
-.main-contacto div {
-  border: 4px solid #000000;
-}
 .main-contacto div h1 {
   font-size: 3rem;
   color: #FFFFFF;
@@ -284,13 +289,11 @@ footer p {
 .main-contacto div form label textarea {
   width: 100%;
   height: 200px;
-  border-radius: 5px;
   border: 1px solid #000;
 }
 .main-contacto div input {
   padding: 10px;
   margin: 10px;
-  border-radius: 5px;
   border: 1px solid #000;
 }
 .main-contacto div .botonEnviar {
@@ -298,7 +301,6 @@ footer p {
   color: #fff;
   margin-bottom: 20px;
   border: none;
-  border-radius: 5px;
   font-family: "DM Serif Display", serif;
   font-size: 20px;
 }
@@ -398,23 +400,26 @@ footer p {
     font-size: 1.5rem;
     text-align: center;
   }
+  .main-sobreMi .contenido-sobreMi .img-nombre img {
+    margin-top: 20px;
+  }
   .main-sobreMi .contenido-sobreMi p {
-    align-items: center;
+    text-align: center;
   }
-  .main-sobreMi .contenido-sobreMi .lenguajes-utilizados {
-    margin-bottom: 100px;
-  }
-  .main-sobreMi .contenido-sobreMi .redes-sociales {
+  .main-sobreMi section .redes-sociales {
     display: flex;
     justify-content: none;
     align-items: none;
     flex-direction: column;
   }
-  .main-sobreMi .contenido-sobreMi .redes-sociales a {
+  .main-sobreMi section .redes-sociales a {
     text-align: center;
   }
-  .main-sobreMi .contenido-sobreMi .redes-sociales .social-btn {
+  .main-sobreMi section .redes-sociales .social-btn {
     padding: 10px 120px;
+  }
+  .main-sobreMi section p {
+    text-align: center;
   }
   .main-proyectos h1 {
     font-size: 2rem;

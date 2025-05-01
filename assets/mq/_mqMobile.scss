@@ -21,79 +21,99 @@
     }
 
     //query sobre mi 
-    .main-sobreMi{
-        .sobreMi{
+    .main-sobreMi {
+        .sobreMi {
             padding: 50px;
         }
+
         .contenido-sobreMi {
-            @include display(flex,center,center);
+            @include display(flex, center, center);
             flex-direction: column;
             margin-left: 0px;
-            .img-nombre{
+
+            .img-nombre {
                 margin-top: 0px;
                 grid-row: 1;
                 align-items: center;
-                h2{
+
+                h2 {
                     background-color: #DECCAD;
                     border-radius: 10px;
                     font-size: 1.5rem;
                     text-align: center;
                 }
-            }
-            p{
-                align-items: center;
-            }
-            .lenguajes-utilizados{
-                margin-bottom: 100px;
+
+                img {
+                    margin-top: 20px;
+                }
             }
 
-            .redes-sociales{
-                @include display(flex,none,none);
+            p {
+                text-align: center;
+            }
+        }
+
+        section {
+            .redes-sociales {
+                @include display(flex, none, none);
                 flex-direction: column;
-                a{
+
+                a {
                     text-align: center;
                 }
-                .social-btn{
+
+                .social-btn {
                     padding: 10px 120px;
                 }
+            }
+            p {
+                text-align: center;
             }
         }
     }
 
+
     //query proyectos
-    .main-proyectos{
-        h1{
+    .main-proyectos {
+        h1 {
             font-size: 2rem;
         }
-        .container-proyectos{
-            @include display(block,none,none);
-            a{
+
+        .container-proyectos {
+            @include display(block, none, none);
+
+            a {
                 font-size: 1.5rem;
             }
-            .proyecto{
+
+            .proyecto {
                 margin-top: 50px;
-                img{
+
+                img {
                     max-width: 80%;
                     width: 300px;
                     height: 200px;
                 }
             }
         }
-    } 
+    }
 
     //query articulos
-    .articulos{
+    .articulos {
         padding: 50px;
     }
-    .contenido-articulos{
+
+    .contenido-articulos {
         padding: 20px;
         margin: 20px auto;
-        ul{
-            li{
-                a{
+
+        ul {
+            li {
+                a {
                     font-size: 0.9rem;
                 }
-                a:hover{
+
+                a:hover {
                     font-size: 1rem;
                 }
             }
